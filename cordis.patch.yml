@@ -1,0 +1,9 @@
+# dsh-premise-guard-cn bundle patch: one insert over the profile root.
+- insert:
+    - id: premise-guard-cn
+      name: 'dsh-premise-guard-cn'
+      config:
+        anchorsFile: ''
+        maxAnchors: 5
+        minAnchorLength: 4
+        maxNoticeChars: 700

@@ -1,0 +1,46 @@
+{
+  "name": "dsh-premise-guard-cn",
+  "version": "0.1.0",
+  "description": "中文前提锚点守卫（前提守卫）：压缩摘要丢失关键前提时报警。fork of ICCuse/dsh-premise-guard (MIT)，为中文小说创作项目定制：中文引号/书名号/术语链/编号/仓内路径锚点 + 手动锚点清单（.dsh-meow/anchors.md）+ premise_anchor 工具。",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/111111AAA111111/dsh-premise-guard-cn.git"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "premise-guard",
+    "memory",
+    "chinese"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/schemastery": "^3.18.1",
+    "@deepseek-ai/dsh-llm": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": { "optional": true },
+    "@deepseek-ai/schemastery": { "optional": true },
+    "@deepseek-ai/dsh-llm": { "optional": true },
+    "@deepseek-ai/dsh-tools": { "optional": true }
+  }
+}
