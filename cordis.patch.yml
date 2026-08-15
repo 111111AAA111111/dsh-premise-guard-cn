@@ -1,9 +1,13 @@
-# dsh-premise-guard-cn bundle patch: one insert over the profile root.
+# dsh-premise-guard-cn bundle patch.
+# Automatic registries are stored outside the workspace at
+# ~/.dsh/premise-guard-cn/workspaces/<opaque-hash>/anchors.md.
 - insert:
     - id: premise-guard-cn
       name: 'dsh-premise-guard-cn'
       config:
         anchorsFile: ''
+        anchorsStoreDir: ''
+        allowAnchorEdits: false
         maxAnchors: 5
         minAnchorLength: 4
         maxNoticeChars: 700
